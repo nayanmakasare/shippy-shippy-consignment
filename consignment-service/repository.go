@@ -1,39 +1,37 @@
 package main
 
 import (
-	pb "github.com/nayanmakasare/shippy-shippy-consignment/proto/consignment"
 	"context"
+	pb "github.com/nayanmakasare/shippy-shippy-consignment/consignment-service/proto/consignment"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 
-type Repository interface {
-	Create(consignment *pb.Consignment) error
-	GetAll() ([] *pb.Consignment, error)
+type repository interface {
+	Create(*pb.Consignment) ( error)
+	GetAll() ([]*pb.Consignment , error)
 }
 
 type MongoRepository struct {
 	collection *mongo.Collection
 }
 
-func(mongoRepo *MongoRepository) Create(consignment *pb.Consignment) error{
-	 _, err :=  mongoRepo.collection.InsertOne(context.Background(), consignment)
-	 if err != nil{
-	 	return err
-	 }
-	 return err
+func (repository *MongoRepository)	Create(consignment *pb.Consignment) ( error)   {
+	_, err := repository.collection.InsertOne(context.Background(), consignment)
+	return err
 }
 
-func(mongoRepo *MongoRepository) GetAll()([]*pb.Consignment, error){
-	cur, err := mongoRepo.collection.Find(context.Background(),nil, nil)
+func (repository *MongoRepository) GetAll() ([]*pb.Consignment, error)  {
+	cur, err := repository.collection.Find(context.Background(), nil, nil)
 	var consignments []*pb.Consignment
+
 	for cur.Next(context.Background()){
 		var consignment *pb.Consignment
-		if err := cur.Decode(consignment); err != nil {
+		if err := cur.Decode(&consignment); err != nil {
 			return nil, err
 		}
 		consignments = append(consignments, consignment)
 	}
-	return consignments,err;
+	return consignments, err
 }
 
 

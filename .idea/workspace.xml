@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86845c91-4fd9-4f54-9692-2bb745f8d0d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gtrial2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gtrial2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consignment-cli/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consignment-cli/cli.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consignment-cli/consignment-cli" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consignment-cli/consignment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consignment-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consignment-service/consignment-service" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/datastore.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/proto/vessel/vessel.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/proto/vessel/vessel.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shippy-service-vessel/shippy-service-vessel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consignment-service/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/consignment-service/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consignment-service/datastore.go" beforeDir="false" afterPath="$PROJECT_DIR$/consignment-service/datastore.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consignment-service/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/consignment-service/handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consignment-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/consignment-service/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consignment-service/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/consignment-service/repository.go" afterDir="false" />
@@ -16,6 +33,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,20 +50,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/consignment-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/consignment-cli" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/consignment-service" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/consignment-cli" />
+      <recent name="$PROJECT_DIR$/consignment-service" />
       <recent name="$PROJECT_DIR$/consignment-service/proto" />
       <recent name="$PROJECT_DIR$/consignment-service/proto/consignment" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/consignment-service" />
     </key>
   </component>
   <component name="RunDashboard">
