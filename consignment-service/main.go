@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/micro/go-micro"
-	"log"
+	"github.com/micro/protobuf/protoc-gen-go/micro"
 	pb "github.com/nayanmakasare/shippy-shippy-consignment/proto/consignment"
+	"log"
 )
 
 const DB_HOST  = "mongodb://nayan:tlwn722n@cluster0-shard-00-00-8aov2.mongodb.net:27017,cluster0-shard-00-01-8aov2.mongodb.net:27017,cluster0-shard-00-02-8aov2.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority"

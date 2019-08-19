@@ -10,11 +10,11 @@ type Handler struct {
 }
 
 func (h *Handler) CreateConsignment(ctx context.Context, req *pb.Consignment, res *pb.Response)  error {
-	return h.Repository.Create(req)
+	return Create(req)
 }
 
 func (h *Handler) GetConsignments(ctx context.Context, req *pb.GetRequest, res *pb.Response) error  {
-	consignments, err := h.Repository.GetAll()
+	consignments, err := GetAll()
 	if err != nil {
 		return err
 	}
